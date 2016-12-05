@@ -163,7 +163,7 @@ Store.reactComponent = function(component){
     component.stores.detachables = component.stores.detachables || [];
     component.stores.detachables.push(detachable);
   }
-  component.stores.forget = function(storeName){
+  component.stores.forget = function(){
     this.detachables.forEach(function(store){
       store.detach();
     })
